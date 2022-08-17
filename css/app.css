@@ -1,0 +1,95 @@
+html {
+  font-size: 14px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+a:hover {
+  color: #339A92;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  color: #575757;
+}
+
+h2 {
+  color: #575757;
+}
+
+h3 {
+  color: #575757;
+}
+
+h5 {
+  color: #575757;
+}
+
+.header {
+  background-color: #FFF;
+  height: 70px;
+}
+.header_logo {
+  height: 4.2rem;
+}
+.header_link {
+  font-size: 1.2rem;
+}
+
+.main-image {
+  height: 32rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../header2.png");
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  .main-image-logo {
+    width: 100%;
+  }
+}
+
+.link {
+  color: #008177;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.link:hover {
+  color: #339A92;
+}
+
+.main_image {
+  height: 32rem;
+  background: url("../img/main.jpg");
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+}
+
+.main_popup-bg {
+  background-color: #F9F9F9;
+}
+
+.main_icon {
+  height: 100px;
+}
+
+/*# sourceMappingURL=app.css.map */

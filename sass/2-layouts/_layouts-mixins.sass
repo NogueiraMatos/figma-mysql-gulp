@@ -1,0 +1,8 @@
+@use '../1-base/variables'
+
+@mixin link-decoration
+  color: variables.$primary-color
+  text-decoration: none
+  transition: .4s
+  &:hover
+    color: variables.$primary-color_lighter
