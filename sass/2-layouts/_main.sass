@@ -1,6 +1,6 @@
 @use '../1-base/variables'
 @use '../1-base/base-mixins'
-    
+
 .main_image
   height: 32rem
   background: url("../img/main.jpg")
@@ -9,7 +9,44 @@
   width: 100%
 
 .main_popup-bg
-    background-color: variables.$light-color_darker
+  background-color: variables.$light-color_darker
 
 .main_icon
-    height: 100px
+  height: 100px
+
+.main_paws
+  width: 100%
+  &-rotate
+    transform: rotateY(180deg)
+
+.bg-secundary
+  background-color: variables.$light-color_darker
+
+.circle
+  width: 60px
+  height: 60px
+  border-radius: 100%
+  background-color: variables.$primary-color
+  &-inactive
+    width: 60px
+    height: 60px
+    border-radius: 100%
+    background-color: variables.$light-color_darkerness
+
+.circles-steps-numbers
+  color: variables.$light-color
+  font-size: 1.5rem
+  &-inactive
+    font-size: 1.5rem
+
+.hr
+  border-top: 2px solid
+  width: 100px
+  flex-shrink: 5
+
+.button
+  height: 25px
+  background-color: variables.$secundary-color
+  border-radius: 4px
+  border-style: none
+  color: variables.$light-color

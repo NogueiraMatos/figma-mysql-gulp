@@ -18,16 +18,15 @@ a:hover {
   color: #339A92;
 }
 
-input {
-  border: none;
-  outline: none;
-}
-
 ul {
   list-style: none;
 }
 
 p {
+  color: #575757;
+}
+
+span {
   color: #575757;
 }
 
@@ -43,6 +42,10 @@ h5 {
   color: #575757;
 }
 
+label {
+  color: #575757;
+}
+
 .header {
   background-color: #FFF;
   height: 70px;
@@ -52,19 +55,6 @@ h5 {
 }
 .header_link {
   font-size: 1.2rem;
-}
-
-.main-image {
-  height: 32rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../header2.png");
-  background-position: 50%;
-  background-size: cover;
-  width: 100%;
-}
-@media (max-width: 576px) {
-  .main-image-logo {
-    width: 100%;
-  }
 }
 
 .link {
@@ -90,6 +80,56 @@ h5 {
 
 .main_icon {
   height: 100px;
+}
+
+.main_paws {
+  width: 100%;
+}
+.main_paws-rotate {
+  transform: rotateY(180deg);
+}
+
+.bg-secundary {
+  background-color: #F9F9F9;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #008177;
+}
+.circle-inactive {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #cccccc;
+}
+
+.circles-steps-numbers {
+  color: #FFF;
+  font-size: 1.5rem;
+}
+.circles-steps-numbers-inactive {
+  font-size: 1.5rem;
+}
+
+.hr {
+  border-top: 2px solid;
+  width: 100px;
+  flex-shrink: 5;
+}
+
+.button {
+  height: 25px;
+  background-color: #EF3A5D;
+  border-radius: 4px;
+  border-style: none;
+  color: #FFF;
+}
+
+.social-medias-icons {
+  width: 42px;
 }
 
 /*# sourceMappingURL=app.css.map */

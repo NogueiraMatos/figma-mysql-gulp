@@ -25,21 +25,21 @@
                 <div class="col-9">
                     <img src="img/logo.png" alt="logo" class="header_logo mt-1">
                 </div>
-                <a href="#" class="col link">
+                <a href="#passear" class="col link">
                     <h2><b class="header_link">Passear</b></h2>
                 </a>
-                <a href="#" class="col link">
+                <a href="#como-funciona" class="col link">
                     <h2><b class="header_link">Sobre</b></h2>
                 </a>
-                <a href="#" class="col link">
+                <a href="#contato" class="col link">
                     <h2><b class="header_link">Contato</b></h2>
                 </a>
             </div>
         </div>
     </header>
     <main>
-        <section>
-            <div class="main_image mb-5">
+        <section class="mb-5">
+            <div class="main_image">
                 <div class="container">
                     <div class="row gx-1">
                         <div class="col-9"></div>
@@ -53,8 +53,8 @@
                 </div>
             </div>
         </section>
-        <section>
-            <h2 class="text-center font-weight-bold">Como funciona</h2>
+        <section class="mb-5">
+            <h2 class="text-center font-weight-bold" id="como-funciona">Como funciona</h2>
             <div class="container">
                 <div class="row gx-1">
                     <div class="col-3"></div>
@@ -66,25 +66,119 @@
                 </div>
                 <div class="row">
                     <div class="col-5"></div>
-                    
-                    <img src="img/patas.png" alt="cachorro" class="main_icon col-2">
-                    <div class="col-2">
-                        <div class="row"></div>
-                        <div class="row">
-                            <div class="col">
-                                <img src="img/como-funciona-2.png" alt="cachorro" class="main_icon">
+                    <div class="col-4">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <img src="img/patas.png" alt="patas" class="main_paws">
+                            </div>
+                            <div class="col-6">
+                                <img src="img/como-funciona-2.png" alt="moto" class="main_icon">
                                 <h5 class="mt-2">2- Vamos até você</h5>
                                 <p>Passeadores de segurança aprovados por nós.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-4">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <img src="img/como-funciona-3.png" alt="passeio" class="main_icon">
+                                <h5 class="mt-2">3- Seu pet feliz</h5>
+                                <p>Você acompanha por onde o passeador está caminhando com seu cãozinho por meio de GPS.
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <img src="img/patas.png" alt="patas" class="main_paws main_paws-rotate">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5"></div>
+                    <div class="col-4">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <img src="img/patas.png" alt="patas" class="main_paws">
+                            </div>
+                            <div class="col-6">
+                                <img src="img/como-funciona-4.png" alt="casa" class="main_icon">
+                                <h5 class="mt-2">4- De volta ao lar</h5>
+                                <p>Entregamos seu pet de volta desestressado e contente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <section class="bg-secundary py-5" id="passear">
+            <div class="container">
+                <h2 class="text-center font-weight-bold mb-5">Vamos começar?</h2>
+                <div class="d-flex align-items-center justify-content-center pb-5">
+                    <div class="circle d-flex justify-content-center align-items-center">
+                        <span class="circles-steps-numbers">1</span>
+                    </div>
+                    <h5 class="px-3">Suas informações</h5>
+                    <hr class="hr mx-3">
+                    <div class="circle-inactive d-flex justify-content-center align-items-center">
+                        <span class="circles-steps-numbers-inactive">2</span>
+                    </div>
+                    <h5 class="px-3">Sua localização</h5>
+                    <hr class="hr mx-3">
+                    <div class="circle-inactive d-flex justify-content-center align-items-center">
+                        <span class="circles-steps-numbers-inactive">3</span>
+                    </div>
+                    <h5 class="px-3">Data</h5>
+                </div>
+
+                <div class="row py-4">
+                    <div class="col-3"></div>
+                    <div class="col-3">
+                        <label for="form_name">Nome</label>
+                        <input type="text" class="form-control form_input" id="form_name">
+                    </div>
+                    <div class="col-3">
+                        <label for="form_surname">Sobrenome</label>
+                        <input type="text" class="form-control form_input" id="form_surname">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-3">
+                        <label for="form_email">E-mail</label>
+                        <input type="text" class="form-control form_input" id="form_email">
+                    </div>
+                    <div class="col-3">
+                        <label for="form_tel">Telefone</label>
+                        <input type="text" class="form-control form_input" id="form_tel">
+                    </div>
+                    <button type="submit" class="button col-1 align-self-end"><b>Próxima</b></button>
+                </div>
+            </div>
+        </section>
+        <footer id="contato">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-3">
+                        <label for="newsletter"><b>Não perca nossas novidades!</b></label>
+                        <input type="text" class="form-control form_input mb-3 mt-1" id="newsletter"
+                            placeholder="E-mail">
+                        <button type="submit" class="button p-1 align-self-end"><b>Inscrever-se</b></button>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-1">
+                        <h5 class="text-center">Siga-nos</h5>
+                        <a href="https://github.com/NogueiraMatos"><img src="img/facebook.png" alt="facebook"
+                                class="social-medias-icons"></a>
+                        <a href="https://github.com/NogueiraMatos"><img src="img/instagram.png" alt="instagram"
+                                class="social-medias-icons"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 
 </html>
-
-<!-- <a href="https://github.com/NogueiraMatos"><i class="fa-brands fa-facebook mx-3 fs-4"></i></a>
-<a href="https://github.com/NogueiraMatos"><i class="fa-brands fa-instagram fs-4"></i></a> -->
