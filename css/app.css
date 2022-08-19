@@ -128,6 +128,19 @@ label {
   color: #FFF;
 }
 
+.sucess-icon {
+  height: 120px;
+  width: 120px;
+}
+
+.display-invisible {
+  display: none;
+}
+
+.form-height {
+  min-height: 430px;
+}
+
 .social-medias-icons {
   width: 42px;
 }
