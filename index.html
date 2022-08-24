@@ -131,6 +131,13 @@
                     </div>
                     <h5 class="px-3">Data</h5>
                 </div>
+                <div class="display-invisible" id="form-alerta">
+                    <div class="d-flex justify-content-center">
+                        <div class="alert alert-warning text-center" role="alert">
+                            <span>Primeiro, preencha corretamente os campos.</span>
+                        </div>
+                    </div>
+                </div>
                 <form>
                     <div class="row py-4">
                         <div class="col-3"></div>
@@ -151,9 +158,10 @@
                         </div>
                         <div class="col-3">
                             <label for="form_tel">Telefone</label>
-                            <input type="text" class="form-control form_input" id="form_tel" required>
+                            <input type="number" class="form-control form_input" id="form_tel" min="1" max="14" required>
                         </div>
-                        <button type="button" class="button col-1 align-self-end" id="form-button-1"><b>Próxima</b></button>
+                        <button type="button" class="button col-1 align-self-end"
+                            id="form-button-1"><b>Próxima</b></button>
                     </div>
                 </form>
             </div>
@@ -177,7 +185,13 @@
                     </div>
                     <h5 class="px-3">Data</h5>
                 </div>
-
+                <div class="display-invisible" id="form-alerta2">
+                    <div class="d-flex justify-content-center">
+                        <div class="alert alert-warning text-center" role="alert">
+                            <span>Primeiro, preencha corretamente os campos.</span>
+                        </div>
+                    </div>
+                </div>
                 <form>
                     <div class="row py-4">
                         <div class="col-3"></div>
@@ -196,7 +210,8 @@
                             <label for="form_city">Cidade</label>
                             <input type="text" class="form-control form_input" id="form_city" required>
                         </div>
-                        <button type="button" class="button col-1 align-self-end" id="form-button-2"><b>Próxima</b></button>
+                        <button type="button" class="button col-1 align-self-end"
+                            id="form-button-2"><b>Próxima</b></button>
                     </div>
                 </form>
             </div>
@@ -220,15 +235,22 @@
                     </div>
                     <h5 class="px-3">Data</h5>
                 </div>
-
+                <div class="display-invisible" id="form-alerta3">
+                    <div class="d-flex justify-content-center">
+                        <div class="alert alert-warning text-center" role="alert">
+                            <span id="form-date-alert-msg">Primeiro, preencha corretamente os campos.</span>
+                        </div>
+                    </div>
+                </div>
                 <form>
                     <div class="row py-4">
                         <div class="col-5"></div>
                         <div class="col-2">
                             <label for="form_date">Data e hora</label>
-                            <input type="date" class="form-control form_input" id="form_date" required>
+                            <input type="datetime-local" min="2022-08-22 10:00" step="1800" class="form-control form_input" id="form_date" required>
                         </div>
-                        <button type="button" class="button col-1 align-self-end" id="form-button-3"><b>Enviar</b></button>
+                        <button type="button" class="button col-1 align-self-end"
+                            id="form-button-3"><b>Enviar</b></button>
                     </div>
                 </form>
             </div>
@@ -266,10 +288,20 @@
                 <div class="row">
                     <div class="col-3"></div>
                     <div class="col-3">
-                        <label for="newsletter"><b>Não perca nossas novidades!</b></label>
-                        <input type="text" class="form-control form_input mb-3 mt-1" id="newsletter"
-                            placeholder="E-mail">
-                        <button type="button" class="button px-2 align-self-end"><b>Inscrever-se</b></button>
+                        <div class="position-fixed display-invisible newsletter-alerta" id="newsletter-alerta">
+                            <div class="d-flex justify-content-center">
+                                <div class="alert alert-warning text-center" role="alert">
+                                    <span>Preencha com um e-mail válido.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <label for="newsletter"><b>Não perca nossas novidades!</b></label>
+                            <input type="email" class="form-control form_input mb-3 mt-1" id="newsletter"
+                                placeholder="E-mail">
+                            <button type="button" class="button px-2 align-self-end"
+                                id="btn-newsletter"><b>Inscrever-se</b></button>
+                        </form>
                     </div>
                     <div class="col-1"></div>
                     <div class="col-1">
