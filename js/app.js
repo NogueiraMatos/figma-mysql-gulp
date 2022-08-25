@@ -1,6 +1,8 @@
 $(document).ready(function () {
+    setTimeout(function () { $('#newsletter-alerta').css('display', 'none') }, 3000)
     const d = new Date()
-    let date = new Date(d.getTime() - 10800000).toJSON().slice(0,16)
+    const timeZone = 10800000
+    let date = new Date(d.getTime() - timeZone).toJSON().slice(0, 16)
     $('#form_date').val(date)
 })
 
@@ -20,7 +22,10 @@ $('#form-button-3').click(() => {
     let inputs = [$('#form_date').val()]
     let filled = filledForm(...inputs)
     let date = $('#form_date').val()
-    if (checkDate(date) && checkTime(date)) {changeDisplay(filled, 'passear3', 'passear4', 'form-alerta3')}
+    if (checkDate(date) && checkTime(date)) {
+        changeDisplay(filled, 'passear3', 'passear4', 'form-alerta3')
+        $('#passear-form').submit()
+    }
 })
 
 function filledForm(...inputs) {
@@ -38,39 +43,37 @@ function changeDisplay(filled, before, after, alert) {
     }
 }
 
-$('#btn-newsletter').click(() => {
-    if ($('#newsletter').val() == '') {
-        $(`#newsletter-alerta`).css('display', 'inline')
-        setTimeout(() => {
-            $(`#newsletter-alerta`).css('display', 'none')
-        }, 4000);
-    }
-})
-
 function checkDate(date) {
     const d = new Date()
-    let dateNow = new Date(d.getTime() - 10800000).toJSON().slice(0,16)
-    console.log(date)
-    console.log(dateNow)
+    let dateNow = new Date(d.getTime() - 10800000).toJSON().slice(0, 16)
     if (date >= dateNow) {
         return true
     } else {
-        let alertMsg = `Não é possível selecionar uma data passada.`
-        $('#form-date-alert-msg').text(alertMsg)
-        $('#form-alerta3').css('display', 'inline')
+        let msg = `Não é possível selecionar uma data passada.`
+        alertMSg(msg)
         return false
     }
 }
 
 function checkTime(date) {
     let min = Number(date.slice(-2))
+    let hour = Number(date.slice(-5, -3))
     if (min == 0 || min == 30) {
-        return true
+        if (hour >= 8 && hour < 18) {
+            return true
+        } else {
+            let msg = 'Selecione uma opção dentro do nosso horário de funcionamento (8h às 17:30).'
+            alertMSg(msg)
+            return false
+        }
     } else {
-        let hour = Number(date.slice(-5,-3))
-        let alertMsg = `Selecione um horário que termine em 00 ou 30 minutos. Exemplo: ${hour + 1}:00 ou ${hour}:30`
-        $('#form-date-alert-msg').text(alertMsg)
-        $('#form-alerta3').css('display', 'inline')
+        let msg = `Selecione um horário que termine em 00 ou 30 minutos. Exemplo: ${hour + 1}:00 ou ${hour}:30`
+        alertMSg(msg)
         return false
     }
+}
+
+function alertMSg(msg) {
+    $('#form-date-alert-msg').text(msg)
+    $('#form-alerta3').css('display', 'inline')
 }
