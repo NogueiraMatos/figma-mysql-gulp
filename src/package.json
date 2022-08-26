@@ -1,0 +1,30 @@
+{
+  "name": "pernadapetgulp",
+  "version": "1.0.0",
+  "description": "Primeiro contato com Figma, Mysql e Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NogueiraMatos/figma-mysql-gulp.git"
+  },
+  "author": "Marcos Matos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NogueiraMatos/figma-mysql-gulp/issues"
+  },
+  "homepage": "https://github.com/NogueiraMatos/figma-mysql-gulp#readme",
+  "devDependencies": {
+    "babel-core": "*",
+    "gulp": "*",
+    "gulp-babel": "*",
+    "gulp-concat": "*",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "*",
+    "gulp-uglifycss": "*",
+    "sass": "^1.54.5",
+    "gulp-htmlmin": "*"
+  }
+}
