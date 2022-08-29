@@ -28,6 +28,19 @@ $('#form-button-3').click(() => {
     }
 })
 
+
+$('#mobile-form-button-1').click(() => {
+    let inputs = ['name', 'surname', 'email', 'tel']
+    fillForm(...inputs)
+    $("#form-button-1").trigger('click');
+})
+
+function fillForm(...inputs) {
+    console.log(inputs) //inputs é um array. Pecorrer o array e utilixar a função abaixo.
+    return inputs
+        .map(input => $(`#form_${input}`).val() = $(`#mobile-form_${input}`).val())
+}
+
 function filledForm(...inputs) {
     return inputs
         .map(input => Boolean(input))

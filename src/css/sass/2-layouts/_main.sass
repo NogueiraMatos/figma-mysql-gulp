@@ -1,6 +1,9 @@
 @use '../1-base/variables'
 @use '../1-base/base-mixins'
 
+.primary-color
+  color: variables.$primary-color
+  
 .main_image
   height: 32rem
   background: url("../img/main.jpg")
@@ -32,6 +35,9 @@
     height: 60px
     border-radius: 100%
     background-color: variables.$light-color_darkerness
+  &-mobile
+    @include base-mixins.mobile
+      background-color: #FFF
 
 .circles-steps-numbers
   color: variables.$light-color
@@ -63,3 +69,13 @@
 
 .newsletter-alerta
   bottom: 150px
+
+.mobile_display_invisible
+  @include base-mixins.mobile
+    display: none
+    position: absolute
+    z-index: -1
+
+.mobile_display_visible
+  @include base-mixins.mobile
+    display: inline

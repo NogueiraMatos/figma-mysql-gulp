@@ -56,6 +56,9 @@ label {
 .header_link {
   font-size: 1.2rem;
 }
+.header_menu {
+  height: 3rem;
+}
 
 .link {
   color: #008177;
@@ -64,6 +67,10 @@ label {
 }
 .link:hover {
   color: #339A92;
+}
+
+.primary-color {
+  color: #008177;
 }
 
 .main_image {
@@ -105,6 +112,11 @@ label {
   border-radius: 100%;
   background-color: #cccccc;
 }
+@media (max-width: 576px) {
+  .circle-mobile {
+    background-color: #FFF;
+  }
+}
 
 .circles-steps-numbers {
   color: #FFF;
@@ -143,6 +155,20 @@ label {
 
 .newsletter-alerta {
   bottom: 150px;
+}
+
+@media (max-width: 576px) {
+  .mobile_display_invisible {
+    display: none;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 576px) {
+  .mobile_display_visible {
+    display: inline;
+  }
 }
 
 .social-medias-icons {

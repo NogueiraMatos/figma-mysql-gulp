@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- <?php date_default_timezone_set('America/Sao_Paulo'); ?> -->
+<?php date_default_timezone_set('America/Sao_Paulo'); ?>
 <html lang="pt-br">
 
 <head>
@@ -24,15 +24,23 @@
                 <div class="col-9">
                     <img src="img/logo.png" alt="logo" class="header_logo mt-1">
                 </div>
-                <a href="#passear" class="col link">
-                    <h2><b class="header_link">Passear</b></h2>
-                </a>
-                <a href="#como-funciona" class="col link">
-                    <h2><b class="header_link">Sobre</b></h2>
-                </a>
-                <a href="#contato" class="col link">
-                    <h2><b class="header_link">Contato</b></h2>
-                </a>
+                <div class="col-3 mobile_display_invisible">
+                    <div class="row">
+                        <a href="#passear" class="col link">
+                            <h2><b class="header_link">Passear</b></h2>
+                        </a>
+                        <a href="#como-funciona" class="col link">
+                            <h2><b class="header_link">Sobre</b></h2>
+                        </a>
+                        <a href="#contato" class="col link">
+                            <h2><b class="header_link">Contato</b></h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1 display-invisible mobile_display_visible"></div>
+                <div class="col-2 display-invisible mobile_display_visible">
+                    <img src="img/bars.png" alt="menu" class="header_menu mt-1">
+                </div>
             </div>
         </div>
     </header>
@@ -42,7 +50,7 @@
                 <div class="container">
                     <div class="row gx-1">
                         <div class="col-9"></div>
-                        <div class="col-3 main_popup-bg mt-5 shadow rounded">
+                        <div class="col-3 main_popup-bg mt-5 shadow rounded mobile_display_invisible">
                             <h3 class="m-3 font-weight-bold">Encontre o seu dog walker na Pernada Pet</h3>
                             <p class="m-3">Sem tempo para passear com seu pet? Ninguém merece ficar muito tempo trancado
                                 em casa né?
@@ -56,16 +64,23 @@
             <h2 class="text-center font-weight-bold" id="como-funciona">Como funciona</h2>
             <div class="container">
                 <div class="row gx-1">
-                    <div class="col-3"></div>
-                    <div class="col-2 text-center">
+                    <div class="col-3 mobile_display_invisible"></div>
+                    <div class="col-2 text-center mobile_display_invisible">
                         <img src="img/como-funciona-1.png" alt="cachorro" class="main_icon">
                         <h5 class="mt-2">1- Insira seus dados</h5>
                         <p>Adicione os dados sobre seu pet e onde você mora.</p>
                     </div>
+                    <div class="display-invisible mobile_display_visible">
+                        <div class="text-center">
+                            <img src="img/como-funciona-1.png" alt="cachorro" class="main_icon">
+                            <h5 class="mt-2">1- Insira seus dados</h5>
+                            <p class="pb-4">Adicione os dados sobre seu pet e onde você mora.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-5"></div>
-                    <div class="col-4">
+                    <div class="col-5 mobile_display_invisible"></div>
+                    <div class="col-4 mobile_display_invisible">
                         <div class="row text-center">
                             <div class="col-6">
                                 <img src="img/patas.png" alt="patas" class="main_paws">
@@ -77,10 +92,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row text-center">
+                        <div class="display-invisible mobile_display_visible">
+                            <img src="img/como-funciona-2.png" alt="moto" class="main_icon">
+                            <h5 class="mt-2">2- Vamos até você</h5>
+                            <p class="pb-4">Passeadores de segurança aprovados por nós.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-4">
+                    <div class="col-3 mobile_display_invisible"></div>
+                    <div class="col-4 mobile_display_invisible">
                         <div class="row text-center">
                             <div class="col-6">
                                 <img src="img/como-funciona-3.png" alt="passeio" class="main_icon">
@@ -93,10 +115,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row text-center">
+                        <div class="display-invisible mobile_display_visible">
+                            <img src="img/como-funciona-3.png" alt="passeio" class="main_icon">
+                            <h5 class="mt-2">3- Seu pet feliz</h5>
+                            <p class="pb-4">Você acompanha por onde o passeador está caminhando com seu cãozinho por meio de GPS.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-5"></div>
-                    <div class="col-4">
+                    <div class="col-5 mobile_display_invisible"></div>
+                    <div class="col-4 mobile_display_invisible">
                         <div class="row text-center">
                             <div class="col-6">
                                 <img src="img/patas.png" alt="patas" class="main_paws">
@@ -105,6 +135,15 @@
                                 <img src="img/como-funciona-4.png" alt="casa" class="main_icon">
                                 <h5 class="mt-2">4- De volta ao lar</h5>
                                 <p>Entregamos seu pet de volta desestressado e contente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-invisible mobile_display_visible">
+                        <div class="row text-center">
+                            <div class="">
+                                <img src="img/como-funciona-4.png" alt="casa" class="main_icon">
+                                <h5 class="mt-2">4- De volta ao lar</h5>
+                                <p class="pb-4">Entregamos seu pet de volta desestressado e contente.</p>
                             </div>
                         </div>
                     </div>
@@ -120,16 +159,16 @@
                             <span class="circles-steps-numbers">1</span>
                         </div>
                         <h5 class="px-3">Suas informações</h5>
-                        <hr class="hr mx-3">
-                        <div class="circle-inactive d-flex justify-content-center align-items-center">
-                            <span class="circles-steps-numbers-inactive">2</span>
+                        <hr class="hr mx-3 mobile_display_invisible">
+                        <div class="circle-inactive circle-mobile d-flex justify-content-center align-items-center mobile_display_invisible">
+                            <span class="circles-steps-numbers-inactive mobile_display_invisible">2</span>
                         </div>
-                        <h5 class="px-3">Sua localização</h5>
-                        <hr class="hr mx-3">
-                        <div class="circle-inactive d-flex justify-content-center align-items-center">
-                            <span class="circles-steps-numbers-inactive">3</span>
+                        <h5 class="px-3 mobile_display_invisible">Sua localização</h5>
+                        <hr class="hr mx-3 mobile_display_invisible">
+                        <div class="circle-inactive circle-mobile d-flex justify-content-center align-items-center mobile_display_invisible">
+                            <span class="circles-steps-numbers-inactive mobile_display_invisible">3</span>
                         </div>
-                        <h5 class="px-3">Data</h5>
+                        <h5 class="px-3 mobile_display_invisible">Data</h5>
                     </div>
                     <div class="display-invisible" id="form-alerta">
                         <div class="d-flex justify-content-center">
@@ -254,28 +293,53 @@
                         </div>
                     </div>
 
-                    <div class="row py-4">
-                        <div class="col-3"></div>
-                        <div class="col-3">
-                            <label for="form_name">Nome</label>
-                            <input type="text" class="form-control form_input" id="form_name" name="name" required>
+                    <div class="">
+                        <div class="row py-4">
+                            <div class="col-3"></div>
+                            <div class="col-3">
+                                <label for="form_name">Nome</label>
+                                <input type="text" class="form-control form_input" id="form_name" name="name" required>
+                            </div>
+                            <div class="col-3">
+                                <label for="form_surname">Sobrenome</label>
+                                <input type="text" class="form-control form_input" id="form_surname" name="surname" required>
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <label for="form_surname">Sobrenome</label>
-                            <input type="text" class="form-control form_input" id="form_surname" name="surname" required>
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-3">
+                                <label for="form_email">E-mail</label>
+                                <input type="text" class="form-control form_input" id="form_email" name="email" required>
+                            </div>
+                            <div class="col-3">
+                                <label for="form_tel">Telefone</label>
+                                <input type="number" class="form-control form_input" id="form_tel" name="tel" min="1" max="14" required>
+                            </div>
+                            <button type="button" class="button col-1 align-self-end p-0" id="form-button-1"><b>Próxima</b></button>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-3"></div>
-                        <div class="col-3">
-                            <label for="form_email">E-mail</label>
-                            <input type="text" class="form-control form_input" id="form_email" name="email" required>
+                    <div class="display-invisible mobile_display_visible">
+                        <div class="row py-4">
+                            <div class="col">
+                                <label for="form_name">Nome</label>
+                                <input type="text" class="form-control form_input" id="mobile-form_name" name="name" required>
+                            </div>
+                            <div class="col">
+                                <label for="form_surname">Sobrenome</label>
+                                <input type="text" class="form-control form_input" id="mobile-form_surname" name="surname" required>
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <label for="form_tel">Telefone</label>
-                            <input type="number" class="form-control form_input" id="form_tel" name="tel" min="1" max="14" required>
+                        <div class="row">
+                            <div class="col">
+                                <label for="form_email">E-mail</label>
+                                <input type="text" class="form-control form_input" id="mobile-form_email" name="email" required>
+                            </div>
+                            <div class="col">
+                                <label for="form_tel">Telefone</label>
+                                <input type="number" class="form-control form_input" id="mobile-form_tel" name="tel" min="1" max="14" required>
+                            </div>
                         </div>
-                        <button type="button" class="button col-1 align-self-end" id="form-button-1"><b>Próxima</b></button>
+                        <button type="button" class="button col-2 align-self-end p-0 mt-2" id="mobile-form-button-1"><b>Próxima</b></button>
                     </div>
 
                 </div>
@@ -284,20 +348,20 @@
                 <div class="pt-5 container form-height">
                     <h2 class="text-center font-weight-bold mb-5">Quase lá...</h2>
                     <div class="d-flex align-items-center justify-content-center pb-5">
-                        <div class="circle d-flex justify-content-center align-items-center">
-                            <span class="circles-steps-numbers">1</span>
+                        <div class="circle circle-mobile d-flex justify-content-center align-items-center mobile_display_invisible">
+                            <span class="circles-steps-numbers mobile_display_invisible">1</span>
                         </div>
-                        <h5 class="px-3">Suas informações</h5>
-                        <hr class="hr mx-3">
+                        <h5 class="px-3 mobile_display_invisible">Suas informações</h5>
+                        <hr class="hr mx-3 mobile_display_invisible">
                         <div class="circle d-flex justify-content-center align-items-center">
                             <span class="circles-steps-numbers">2</span>
                         </div>
                         <h5 class="px-3">Sua localização</h5>
-                        <hr class="hr mx-3">
-                        <div class="circle-inactive d-flex justify-content-center align-items-center">
-                            <span class="circles-steps-numbers-inactive">3</span>
+                        <hr class="hr mx-3 mobile_display_invisible">
+                        <div class="circle-inactive circle-mobile d-flex justify-content-center align-items-center mobile_display_invisible">
+                            <span class="circles-steps-numbers-inactive mobile_display_invisible">3</span>
                         </div>
-                        <h5 class="px-3">Data</h5>
+                        <h5 class="px-3 mobile_display_invisible">Data</h5>
                     </div>
                     <div class="display-invisible" id="form-alerta2">
                         <div class="d-flex justify-content-center">
@@ -333,16 +397,16 @@
                 <div class="pt-5 container form-height">
                     <h2 class="text-center font-weight-bold mb-5">Quase lá...</h2>
                     <div class="d-flex align-items-center justify-content-center pb-5">
-                        <div class="circle d-flex justify-content-center align-items-center">
-                            <span class="circles-steps-numbers">1</span>
+                        <div class="circle circle-mobile d-flex justify-content-center align-items-center mobile_display_invisible">
+                            <span class="circles-steps-numbers mobile_display_invisible">1</span>
                         </div>
-                        <h5 class="px-3">Suas informações</h5>
-                        <hr class="hr mx-3">
-                        <div class="circle d-flex justify-content-center align-items-center">
-                            <span class="circles-steps-numbers">2</span>
+                        <h5 class="px-3 mobile_display_invisible">Suas informações</h5>
+                        <hr class="hr mx-3 mobile_display_invisible">
+                        <div class="circle circle-mobile d-flex justify-content-center align-items-center mobile_display_invisible">
+                            <span class="circles-steps-numbers mobile_display_invisible">2</span>
                         </div>
-                        <h5 class="px-3">Sua localização</h5>
-                        <hr class="hr mx-3">
+                        <h5 class="px-3 mobile_display_invisible">Sua localização</h5>
+                        <hr class="hr mx-3 mobile_display_invisible">
                         <div class="circle d-flex justify-content-center align-items-center">
                             <span class="circles-steps-numbers">3</span>
                         </div>
@@ -372,16 +436,16 @@
             <div class="pt-5 container form-height">
                 <h2 class="text-center font-weight-bold mb-5">Pronto!</h2>
                 <div class="d-flex align-items-center justify-content-center pb-5">
-                    <div class="circle d-flex justify-content-center align-items-center">
-                        <span class="circles-steps-numbers">1</span>
+                    <div class="circle circle-mobile d-flex justify-content-center align-items-center mobile_display_invisible">
+                        <span class="circles-steps-numbers mobile_display_invisible">1</span>
                     </div>
-                    <h5 class="px-3">Suas informações</h5>
-                    <hr class="hr mx-3">
-                    <div class="circle d-flex justify-content-center align-items-center">
-                        <span class="circles-steps-numbers">2</span>
+                    <h5 class="px-3 mobile_display_invisible">Suas informações</h5>
+                    <hr class="hr mx-3 mobile_display_invisible">
+                    <div class="circle circle-mobile d-flex justify-content-center align-items-center mobile_display_invisible">
+                        <span class="circles-steps-numbers mobile_display_invisible">2</span>
                     </div>
-                    <h5 class="px-3">Sua localização</h5>
-                    <hr class="hr mx-3">
+                    <h5 class="px-3 mobile_display_invisible">Sua localização</h5>
+                    <hr class="hr mx-3 mobile_display_invisible">
                     <div class="circle d-flex justify-content-center align-items-center">
                         <span class="circles-steps-numbers">3</span>
                     </div>
