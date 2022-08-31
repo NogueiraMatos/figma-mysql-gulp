@@ -311,7 +311,7 @@
                                 <label for="form_tel">Telefone</label>
                                 <input type="number" class="form-control form_input" id="form_tel" name="tel" min="1" max="14" required>
                             </div>
-                            <button type="button" class="button col-1 align-self-end p-0" id="form-button-1"><b>Próxima</b></button>
+                            <button type="button" class="button col-2 col-lg-1 align-self-end" id="form-button-1"><b>Próxima</b></button>
                         </div>
                     </div>
                     <div class="display-invisible mobile_display_visible">
@@ -384,12 +384,12 @@
                             <label for="form_city">Cidade</label>
                             <input type="text" class="form-control form_input" id="form_city" name="city" required>
                         </div>
-                        <button type="button" class="button col-1 align-self-end mobile_display_invisible" id="form-button-2"><b>Próxima</b></button>
+                        <button type="button" class="button col-2 col-lg-1 align-self-end mobile_display_invisible" id="form-button-2"><b>Próxima</b></button>
                     </div>
                     <div class="row mt-2 display-invisible mobile_display_visible">
                         <div class="col-3 display-invisible mobile_display_visible"></div>
                         <div class="col-3 display-invisible mobile_display_visible">
-                            <button type="button" class="button align-self-end mobile_display_visible px-2" id="mobile-form-button-2"><b>Próxima</b></button>
+                            <button type="button" class="button align-self-end mobile_display_visible px-4" id="mobile-form-button-2"><b>Próxima</b></button>
                         </div>
                     </div>
 
@@ -422,28 +422,16 @@
                         </div>
                     </div>
 
-                    <div class="row py-4 mobile_display_invisible">
-                        <div class="col-5 mobile_display_invisible"></div>
-                        <div class="col-2 mobile_display_invisible">
+                    <div class="row py-4">
+                        <div class="col-2 col-md-5"></div>
+                        <div class="col-8 col-md-2">
                             <label for="form_date">Data e hora</label>
                             <input type="datetime-local" min="2022-08-22 10:00" step="1800" class="form-control form_input" id="form_date" name="date" required>
                         </div>
-                        <button type="submit" class="button col-1 align-self-end mobile_display_invisible" id="form-button-3"><b>Enviar</b></button>
-                    </div>
-                    <div class="row py-4 display-invisible mobile_display_visible">
-                        <div class="col-2 display-invisible mobile_display_visible"></div>
-                        <div class="col-8 display-invisible mobile_display_visible">
-                            <label for="form_date">Data e hora</label>
-                            <input type="datetime-local" min="2022-08-22 10:00" step="1800" class="form-control form_input" id="mobile-form_date" name="date" required>
+                        <div class="col-2 col-md-1 align-self-end">
+                            <button type="submit" class="button px-2" id="form-button-3"><b>Enviar</b></button>
                         </div>
                     </div>
-                    <div class="row display-invisible mobile_display_visible">
-                        <div class="col-2 display-invisible mobile_display_visible"></div>
-                        <div class="col-3 display-invisible mobile_display_visible">
-                            <button type="submit" class="button align-self-end px-2" id="mobile-form-button-3"><b>Enviar</b></button>
-                        </div>
-                    </div>
-
                 </div>
             </section>
         </form>
