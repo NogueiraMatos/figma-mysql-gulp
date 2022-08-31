@@ -21,25 +21,21 @@
     <header class="w-100 header">
         <div class="container">
             <div class="row gx-1 align-items-center">
-                <div class="col-9">
+                <div class="col-4 col-lg-9">
                     <img src="img/logo.png" alt="logo" class="header_logo mt-1">
                 </div>
-                <div class="col-3 mobile_display_invisible">
+                <div class="col-8 col-lg-3">
                     <div class="row">
-                        <a href="#passear" class="col link">
+                        <a href="#passear" class="col text-decoration-none">
                             <h2><b class="header_link">Passear</b></h2>
                         </a>
-                        <a href="#como-funciona" class="col link">
+                        <a href="#como-funciona" class="col text-decoration-none">
                             <h2><b class="header_link">Sobre</b></h2>
                         </a>
-                        <a href="#contato" class="col link">
+                        <a href="#contato" class="col text-decoration-none">
                             <h2><b class="header_link">Contato</b></h2>
                         </a>
                     </div>
-                </div>
-                <div class="col-1 display-invisible mobile_display_visible"></div>
-                <div class="col-2 display-invisible mobile_display_visible">
-                    <img src="img/bars.png" alt="menu" class="header_menu mt-1">
                 </div>
             </div>
         </div>
@@ -293,7 +289,7 @@
                         </div>
                     </div>
 
-                    <div class="">
+                    <div class="mobile_display_invisible">
                         <div class="row py-4">
                             <div class="col-3"></div>
                             <div class="col-3">
@@ -388,7 +384,13 @@
                             <label for="form_city">Cidade</label>
                             <input type="text" class="form-control form_input" id="form_city" name="city" required>
                         </div>
-                        <button type="button" class="button col-1 align-self-end" id="form-button-2"><b>Próxima</b></button>
+                        <button type="button" class="button col-1 align-self-end mobile_display_invisible" id="form-button-2"><b>Próxima</b></button>
+                    </div>
+                    <div class="row mt-2 display-invisible mobile_display_visible">
+                        <div class="col-3 display-invisible mobile_display_visible"></div>
+                        <div class="col-3 display-invisible mobile_display_visible">
+                            <button type="button" class="button align-self-end mobile_display_visible px-2" id="mobile-form-button-2"><b>Próxima</b></button>
+                        </div>
                     </div>
 
                 </div>
@@ -420,13 +422,26 @@
                         </div>
                     </div>
 
-                    <div class="row py-4">
-                        <div class="col-5"></div>
-                        <div class="col-2">
+                    <div class="row py-4 mobile_display_invisible">
+                        <div class="col-5 mobile_display_invisible"></div>
+                        <div class="col-2 mobile_display_invisible">
                             <label for="form_date">Data e hora</label>
                             <input type="datetime-local" min="2022-08-22 10:00" step="1800" class="form-control form_input" id="form_date" name="date" required>
                         </div>
-                        <button type="submit" class="button col-1 align-self-end" id="form-button-3"><b>Enviar</b></button>
+                        <button type="submit" class="button col-1 align-self-end mobile_display_invisible" id="form-button-3"><b>Enviar</b></button>
+                    </div>
+                    <div class="row py-4 display-invisible mobile_display_visible">
+                        <div class="col-2 display-invisible mobile_display_visible"></div>
+                        <div class="col-8 display-invisible mobile_display_visible">
+                            <label for="form_date">Data e hora</label>
+                            <input type="datetime-local" min="2022-08-22 10:00" step="1800" class="form-control form_input" id="mobile-form_date" name="date" required>
+                        </div>
+                    </div>
+                    <div class="row display-invisible mobile_display_visible">
+                        <div class="col-2 display-invisible mobile_display_visible"></div>
+                        <div class="col-3 display-invisible mobile_display_visible">
+                            <button type="submit" class="button align-self-end px-2" id="mobile-form-button-3"><b>Enviar</b></button>
+                        </div>
                     </div>
 
                 </div>
@@ -500,17 +515,19 @@
                             </div>
                         </div>
                         <form action="index.php#contato" method="post">
-                            <label for="newsletter"><b>Não perca nossas novidades!</b></label>
+                            <label for="newsletter">
+                                <b">Não perca nossas novidades!</b>
+                            </label>
                             <input type="email" class="form-control form_input mb-3 mt-1" id="newsletter" placeholder="E-mail" name="newsletter" required>
-                            <button type="submit" class="button px-2 align-self-end" id="btn-newsletter"><b>Inscrever-se</b></button>
+                            <button type="submit" class="button px-2 align-self-end" id="btn-newsletter"><b class="text-small">Inscrever-se</b></button>
                         </form>
                     </div>
                     <div class="col-1"></div>
                     <div class="col-2">
                         <h5 class="text-center">Siga-nos</h5>
                         <div class="text-center">
-                            <a href="https://github.com/NogueiraMatos"><img src="img/facebook.png" alt="facebook" class="social-medias-icons"></a>
-                            <a href="https://github.com/NogueiraMatos"><img src="img/instagram.png" alt="instagram" class="social-medias-icons"></a>
+                            <a href="https://github.com/NogueiraMatos"><img src="img/facebook.png" alt="facebook" class="social-medias-icons mb-2"></a>
+                            <a href="https://github.com/NogueiraMatos"><img src="img/instagram.png" alt="instagram" class="social-medias-icons mb-2"></a>
                         </div>
                     </div>
                 </div>

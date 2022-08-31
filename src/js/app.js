@@ -4,23 +4,24 @@ $(document).ready(function () {
     const timeZone = 10800000
     let date = new Date(d.getTime() - timeZone).toJSON().slice(0, 16)
     $('#form_date').val(date)
+    $('#mobile-form_date').val(date)
 })
 
 $('#form-button-1').click(() => {
     let inputs = [$('#form_name').val(), $('#form_surname').val(), $('#form_email').val(), $('#form_tel').val()]
-    let filled = filledForm(...inputs)
+    let filled = isFormFilled(...inputs)
     changeDisplay(filled, 'passear', 'passear2', 'form-alerta')
 })
 
 $('#form-button-2').click(() => {
     let inputs = [$('#form_adress').val(), $('#form_district').val(), $('#form_city').val()]
-    let filled = filledForm(...inputs)
+    let filled = isFormFilled(...inputs)
     changeDisplay(filled, 'passear2', 'passear3', 'form-alerta2')
 })
 
 $('#form-button-3').click(() => {
     let inputs = [$('#form_date').val()]
-    let filled = filledForm(...inputs)
+    let filled = isFormFilled(...inputs)
     let date = $('#form_date').val()
     if (checkDate(date) && checkTime(date)) {
         changeDisplay(filled, 'passear3', 'passear4', 'form-alerta3')
@@ -28,20 +29,28 @@ $('#form-button-3').click(() => {
     }
 })
 
-
 $('#mobile-form-button-1').click(() => {
     let inputs = ['name', 'surname', 'email', 'tel']
     fillForm(...inputs)
-    $("#form-button-1").trigger('click');
+    $("#form-button-1").trigger('click')
+})
+
+$('#mobile-form-button-2').click(() => {
+    $("#form-button-2").trigger('click')
+})
+
+$('#mobile-form-button-3').click(() => {
+    let inputs = ['date']
+    fillForm(...inputs)
+    $("#form-button-3").trigger('click')
 })
 
 function fillForm(...inputs) {
-    console.log(inputs) //inputs é um array. Pecorrer o array e utilixar a função abaixo.
     return inputs
-        .map(input => $(`#form_${input}`).val() = $(`#mobile-form_${input}`).val())
+        .map(input => $(`#form_${input}`).val($(`#mobile-form_${input}`).val()))
 }
 
-function filledForm(...inputs) {
+function isFormFilled(...inputs) {
     return inputs
         .map(input => Boolean(input))
         .reduce((a, b) => a && b)

@@ -55,17 +55,11 @@ label {
 }
 .header_link {
   font-size: 1.2rem;
-}
-.header_menu {
-  height: 3rem;
-}
-
-.link {
   color: #008177;
   text-decoration: none;
   transition: 0.4s;
 }
-.link:hover {
+.header_link:hover {
   color: #339A92;
 }
 
@@ -173,6 +167,10 @@ label {
 
 .social-medias-icons {
   width: 42px;
+}
+
+.text-small {
+  font-size: 0.7rem;
 }
 
 /*# sourceMappingURL=app.css.map */
