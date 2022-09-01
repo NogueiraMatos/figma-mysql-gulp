@@ -39,12 +39,6 @@ $('#mobile-form-button-2').click(() => {
     $("#form-button-2").trigger('click')
 })
 
-$('#mobile-form-button-3').click(() => {
-    let inputs = ['date']
-    fillForm(...inputs)
-    $("#form-button-3").trigger('click')
-})
-
 function fillForm(...inputs) {
     return inputs
         .map(input => $(`#form_${input}`).val($(`#mobile-form_${input}`).val()))
